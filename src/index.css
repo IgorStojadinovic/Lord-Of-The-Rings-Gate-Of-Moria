@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Aniron";
+  src: url("./fonts/anirm___.ttf");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Aniron";
+  font-size: 12;
+  background-color: black;
+}
+
+.main {
+  background-image: url("./components/assets/images/bg-tree.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-color: black;
+}
