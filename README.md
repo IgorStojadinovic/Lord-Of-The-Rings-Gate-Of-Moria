@@ -1,1 +1,1 @@
- Updated the older contex/reducer  version of this project to Redux.
+ Updated the older context/reducer  version of this project to Redux.
