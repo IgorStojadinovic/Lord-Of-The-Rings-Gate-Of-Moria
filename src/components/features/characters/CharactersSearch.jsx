@@ -1,20 +1,20 @@
-import { useSelector, useDispatch } from "react-redux";
-import { AnimatePresence, motion } from "framer-motion";
-import { useState } from "react";
+import { useSelector, useDispatch } from 'react-redux';
+import { AnimatePresence, motion } from 'framer-motion';
+import { useState } from 'react';
 import {
   selectSingleCharacter,
   fetchCharacter,
   setAlert,
   getAlertStatus,
   clearCharacter,
-} from "./charactersSlice";
+} from './charactersSlice';
 
-import CharacterResults from "./CharacterResults";
-import Alert from "../alert/Alert";
-import Navbar from "../../navigation/Navbar";
+import CharacterResults from './CharacterResults';
+import Alert from '../alert/Alert';
+import Navbar from '../../navigation/Navbar';
 
 function Characters() {
-  const [text, setText] = useState("");
+  const [text, setText] = useState('');
 
   const dispatch = useDispatch();
 
@@ -30,7 +30,7 @@ function Characters() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if (text === "") {
+    if (text === '') {
       dispatch(setAlert(true));
     } else {
       dispatch(fetchCharacter(text));
@@ -47,26 +47,26 @@ function Characters() {
       <Navbar />
       <AnimatePresence>
         <motion.div
-          className=" flex flex-col items-center w-full h-[1200px]  md:h-screen lg:h-[90vh] lg:items-center "
+          className=" flex flex-col items-center w-full h-screen md:h-screen lg:h-[90vh] lg:items-center "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            type: "tween",
+            type: 'tween',
             duration: 1,
           }}
         >
-          <form className="w-full h-full flex-1 flex form-control items-center">
-            <p className="flex items-center  text-center h-[15%] text-lg   lg:hidden">
+          <form className="h-full flex form-control items-center pt-7">
+            <p className=" text-center h-[25%] text-lg   lg:hidden">
               Searh for your favorite characters
             </p>
 
-            <div className="form-control w-[70%] flex flex-col items-center lg:w-[50%] ">
+            <div className="form-control w-full flex flex-col items-center lg:w-[50%] px-5 ">
               {alert ? (
                 <motion.div
                   initial={{ opacity: 0 }}
-                  animate={{ y: ["50px", "0px", "0px"], opacity: 1 }}
+                  animate={{ y: ['50px', '0px', '0px'], opacity: 1 }}
                   transition={{
-                    type: "tween",
+                    type: 'tween',
                     duration: 1,
                   }}
                 >
@@ -79,10 +79,10 @@ function Characters() {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{
-                  type: "tween",
+                  type: 'tween',
                   duration: 2,
                 }}
-                style={{ height: "50px" }}
+                style={{ height: '50px' }}
               ></motion.div>
 
               <div className="input-group w-full ">
@@ -111,7 +111,7 @@ function Characters() {
                 </button>
               </div>
               {character.length > 0 ? (
-                <button className="btn btn-brimary mt-5" onClick={ClearBtn}>
+                <button className="btn btn-brimary my-8 " onClick={ClearBtn}>
                   Clear
                 </button>
               ) : (
@@ -122,7 +122,7 @@ function Characters() {
           <div className="flex items-center justify-center h-full">
             {character.length > 0 ? <CharacterResults /> : <div></div>}
           </div>
-        </motion.div>{" "}
+        </motion.div>{' '}
       </AnimatePresence>
     </>
   );

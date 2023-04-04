@@ -1,5 +1,5 @@
-import Password from "../components/features/password/Password";
-import { AnimatePresence, motion } from "framer-motion";
+import Password from '../components/features/password/Password';
+import { AnimatePresence, motion } from 'framer-motion';
 
 const Gate = () => {
   return (
@@ -8,11 +8,11 @@ const Gate = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{
-          type: "tween",
+          type: 'tween',
           duration: 0.5,
         }}
       >
-        <div className=" main lg:bg-contain bg-cover  bg-top  h-screen  lg:h-screen lg:w-screen">
+        <div className=" main lg:bg-contain h-screen bg-contain bg-top  lg:h-screen lg:w-screen mt-7">
           <Password />
         </div>
       </motion.div>

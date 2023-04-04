@@ -1,4 +1,4 @@
-import charLogo from "../../assets/images/character-logo.jpg";
+import charLogo from '../../assets/images/character-logo.jpg';
 
 const CharacterItem = ({
   char: { name, wikiUrl, birth, race, death, spouse },
@@ -9,7 +9,7 @@ const CharacterItem = ({
         <img
           src={charLogo}
           alt="logo"
-          className="p-5 h-[300px] md:w-full md:p-0 md:object-cover lg:h-full "
+          className=" h-[200px] rounded-sm md:w-full md:p-0 md:object-cover lg:h-full "
         />
       </figure>
       <div className="card-body ">
@@ -17,7 +17,7 @@ const CharacterItem = ({
         <p className="pt-5 text-xs md:text-base">Date of birth : {birth}</p>
         <p className="pt-5 text-xs md:text-base">Date of death : {death}</p>
         <p className="pt-5 text-xs md:text-base">
-          Spause : {spouse ? spouse : "None"}{" "}
+          Spause : {spouse ? spouse : 'None'}{' '}
         </p>
         <p className="pt-5">Race : {race}</p>
 
