@@ -47,7 +47,7 @@ function Characters() {
       <Navbar />
       <AnimatePresence>
         <motion.div
-          className=" flex flex-col items-center w-full h-screen md:h-screen lg:h-[90vh] lg:items-center "
+          className=" flex flex-col items-center w-full lg:h-[90vh] lg:items-center "
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -55,12 +55,12 @@ function Characters() {
             duration: 1,
           }}
         >
-          <form className="h-full flex form-control items-center pt-7">
-            <p className=" text-center h-[25%] text-lg   lg:hidden">
-              Searh for your favorite characters
+          <form className=" flex-1 form-control items-center pt-7 h-full  md:w-full ">
+            <p className=" text-center  text-lg   lg:hidden">
+              Search for your favorite characters
             </p>
 
-            <div className="form-control w-full flex flex-col items-center lg:w-[50%] px-5 ">
+            <div className="form-control w-full flex flex-col items-center px-5 md:px-16 lg:w-[50%]  ">
               {alert ? (
                 <motion.div
                   initial={{ opacity: 0 }}
@@ -89,7 +89,7 @@ function Characters() {
                 <input
                   type="text"
                   placeholder="Search…"
-                  className="input input-bordered w-full "
+                  className="input input-bordered w-full focus:outline-none "
                   onChange={handleChange}
                   value={text}
                 />
@@ -119,7 +119,7 @@ function Characters() {
               )}
             </div>
           </form>
-          <div className="flex items-center justify-center h-full">
+          <div className="flex items-center justify-center w-full">
             {character.length > 0 ? <CharacterResults /> : <div></div>}
           </div>
         </motion.div>{' '}

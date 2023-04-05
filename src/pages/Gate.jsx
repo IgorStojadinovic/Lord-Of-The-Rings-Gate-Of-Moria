@@ -1,6 +1,7 @@
 import Password from '../components/features/password/Password';
 import { AnimatePresence, motion } from 'framer-motion';
 
+
 const Gate = () => {
   return (
     <AnimatePresence>
@@ -12,7 +13,8 @@ const Gate = () => {
           duration: 0.5,
         }}
       >
-        <div className=" main lg:bg-contain h-screen bg-contain bg-top  lg:h-screen lg:w-screen mt-7">
+        <div className="  lg:bg-contain h-screen bg-contain bg-top  lg:h-screen lg:w-screen ">
+        
           <Password />
         </div>
       </motion.div>

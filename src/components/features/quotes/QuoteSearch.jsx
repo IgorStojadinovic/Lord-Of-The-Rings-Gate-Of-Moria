@@ -56,7 +56,7 @@ const QuoteSearch = () => {
       <Navbar />
       <AnimatePresence>
         <motion.div
-          className="w-full h-[90vh] flex flex-col items-center  w-full xl:pt-5 "
+          className="w-full flex  flex-col md:h-[800px] justify-center items-center flex-1 md:justify-start xl:pt-5 mt-12"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -65,7 +65,7 @@ const QuoteSearch = () => {
           }}
         >
           {status !== "loading" ? (
-            <button className="btn w-[200px] h-[5%] " onClick={getRandomQuote}>
+            <button className="btn w-[200px] " onClick={getRandomQuote}>
               {" "}
               Get a quote
             </button>
