@@ -43,4 +43,5 @@ password: Melon
 
 There is a list of books,you can view each movie trailer as well. <br>
 You can search for any character you want and discription will be displayed. This part is made with redux.
+<br>
 And lastlly you can get a random qoute from any movie.
