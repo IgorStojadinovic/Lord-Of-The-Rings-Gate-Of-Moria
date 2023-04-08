@@ -41,8 +41,8 @@ At route / Gate 🧙
 password: Melon
 ```
 
-### There is a list of books,you can view each movie trailer as well. <br>
+There is a list of books,you can view each movie trailer as well. <br>
 
-### You can search for any character you want and discription will be displayed. This part is made with redux.
+You can search for any character you want and discription will be displayed. This part is made with redux.
 
-### And lastlly you can get a random qoute from any movie.
+And lastlly you can get a random qoute from any movie.
