@@ -18,7 +18,7 @@ const CharacterResults = () => {
           type: "tween",
           duration: 1,
         }}
-        className="w-full flex justify-center"
+        className="w-full flex justify-center h-full "
       >
         <CharacterItem char={character[0]} />
       </motion.div>
