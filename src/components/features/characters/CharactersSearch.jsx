@@ -119,7 +119,7 @@ function Characters() {
               )}
             </div>
           </form>
-          <div className="flex items-center justify-center w-full ">
+          <div className="flex items-center justify-center w-full bg-black">
             {character.length > 0 ? <CharacterResults /> : <div></div>}
           </div>
         </motion.div>{" "}

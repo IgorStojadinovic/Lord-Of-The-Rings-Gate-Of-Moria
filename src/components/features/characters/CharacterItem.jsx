@@ -4,12 +4,12 @@ const CharacterItem = ({
   char: { name, wikiUrl, birth, race, death, spouse },
 }) => {
   return (
-    <div className="card  w-[90%] h-[60%] bg-base-200 shadow-xl md:w-[80%]  md:h-[750px]  lg:w-[50%] lg:h-[100%] mb-7   xl:w-[50%] xl:h-[100%] xl:card-side ">
-      <figure className=" h-[40%] p-5 md:p-0 lg:visible xl:w-[100%] ">
+    <div className="card  w-[80%] h-[60%] bg-base-200 shadow-xl sm:w-[50%]   md:w-[50%] md:h-[100%]  lg:w-[50%] lg:h-[100%] mb-7   xl:w-[50%] xl:h-[100%]  ">
+      <figure className=" h-[40%] md:p-0  lg:visible xl:h-[100%] ">
         <img
           src={charLogo}
           alt="logo"
-          className=" h-[200px] rounded-sm md:w-full md:h-full md:p-0 md:pt-7 md:object-contain lg:rounded-2xl lg:h-[200px]  xl:h-[100%]  xl:p-5 xl:w-[100%] "
+          className=" h-full  rounded-sm md:w-full md:h-full  md:p-0 md:object-cover lg:p-0 lg:h-[100%]  xl:h-[100%] xl:p-0  xl:w-[100%] "
         />
       </figure>
       <div className="card-body ">
