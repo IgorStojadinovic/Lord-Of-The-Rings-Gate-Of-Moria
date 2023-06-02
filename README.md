@@ -16,8 +16,6 @@ Project is created with:
 
 ## Setup
 
-You can do it the old fashon way
-
 ```
 $ git clone https://github.com/IgorStojadinovic/Lotr-api-project-redux-version
 $ npm install
