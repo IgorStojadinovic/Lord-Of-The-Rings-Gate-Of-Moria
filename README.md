@@ -2,8 +2,7 @@
 
 [![My Skills](https://skills.thijs.gg/icons?i=javascript,react,redux,tailwind,&theme=dark)](https://skills.thijs.gg)
 
-Since I watched the movies like 1000 times, why not build app as well?<br>
-I wanted to make a LOTR themed project with TailwindCSS and Redux state managment.
+LOTR themed project with TailwindCSS and Redux state managment.
 
 ## Technologies
 
