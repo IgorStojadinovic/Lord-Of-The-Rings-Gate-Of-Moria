@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import whiteTree from "../../assets/images/bg-tree.jpg"
+import whiteTree from '../../assets/images/bg-tree.jpg';
 const Password = () => {
   const redirect = useNavigate();
 
@@ -20,11 +20,15 @@ const Password = () => {
 
   return (
     <AnimatePresence>
-      <div className="flex  flex-col justify-center md:justify-end lg:justify-end  items-center h-full w-full p-7">
-      <img src={whiteTree} className='lg:h-[500px]'/>
-        <div className="flex lg:h-[20%] w-full justify-center items-center  h-[25%]">
+      <div className='flex  flex-col justify-center md:justify-end lg:justify-end  items-center h-full w-full p-7'>
+        <img
+          src={whiteTree}
+          className='lg:h-[500px]'
+          alt='white tree of gondor'
+        />
+        <div className='flex lg:h-[20%] w-full justify-center items-center  h-[25%]'>
           <motion.div
-            className="w-1/2 lg:w-[20%]"
+            className='w-1/2 lg:w-[20%]'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -32,13 +36,13 @@ const Password = () => {
               duration: 2,
             }}
           >
-            <p className=" text-center text-[white] leading-8 w-full flex justify-center  md:text-2xl lg:justify-center lg:p-0">
+            <p className=' text-center text-[white] leading-8 w-full flex justify-center  md:text-2xl lg:justify-center lg:p-0'>
               Doors of Durin
             </p>
           </motion.div>
 
           <motion.div
-            className="w-1/2 lg:w-[20%]"
+            className='w-1/2 lg:w-[20%]'
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{
@@ -47,14 +51,14 @@ const Password = () => {
               delay: 1,
             }}
           >
-            <p className=" text-center leading-8 text-[white]  w-full flex md:justify-center lg:justify-center  md:text-2xl ">
+            <p className=' text-center leading-8 text-[white]  w-full flex md:justify-center lg:justify-center  md:text-2xl '>
               {' '}
               Lord of Moria
             </p>
           </motion.div>
         </div>
         <motion.div
-          className="flex flex-col items-center lg:h-[40%] lg:justify-center justify-start  h-[25%] lg:pb-5 "
+          className='flex flex-col items-center lg:h-[40%] lg:justify-center justify-start  h-[25%] lg:pb-5 '
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
@@ -63,13 +67,13 @@ const Password = () => {
             delay: 2,
           }}
         >
-          <p className="text-[white]  lg:text-xl pb-5  md:text-2xl ">
+          <p className='text-[white]  lg:text-xl pb-5  md:text-2xl '>
             Spreak Friend And Enter
           </p>
           <input
-            type="text"
-            placeholder="Type here"
-            className="input input-bordered  w-full font-bold text-center text-[white]  md:text-2xl md:h-[80px] lg:h-[60px]"
+            type='text'
+            placeholder='Type here'
+            className='input input-bordered  w-full font-bold text-center text-[white]  md:text-2xl md:h-[80px] lg:h-[60px]'
             onChange={passwordCheck}
           />
         </motion.div>
