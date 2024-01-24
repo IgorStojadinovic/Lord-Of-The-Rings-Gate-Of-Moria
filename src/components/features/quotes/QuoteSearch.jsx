@@ -1,4 +1,4 @@
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector, useDispatch } from 'react-redux';
 import {
   selectAllQuotes,
   selectCharacter,
@@ -10,11 +10,11 @@ import {
   fetchQuotes,
   clearQuote,
   addQuote,
-} from "./quotesSlice";
+} from './quotesSlice';
 
-import { AnimatePresence, motion } from "framer-motion";
-import Navbar from "../../navigation/Navbar";
-import QuoteResults from "./QuoteResults";
+import { AnimatePresence, motion } from 'framer-motion';
+import Navbar from '../../navigation/Navbar';
+import QuoteResults from './QuoteResults';
 
 const QuoteSearch = () => {
   const dispatch = useDispatch();
@@ -56,17 +56,17 @@ const QuoteSearch = () => {
       <Navbar />
       <AnimatePresence>
         <motion.div
-          className="w-full flex  flex-col md:h-[800px] justify-center items-center flex-1 md:justify-start xl:pt-5 mt-12"
+          className='w-full flex  flex-col md:h-[800px] justify-center items-center flex-1 md:justify-start xl:pt-5 '
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{
-            type: "tween",
+            type: 'tween',
             duration: 1,
           }}
         >
-          {status !== "loading" ? (
-            <button className="btn w-[200px] " onClick={getRandomQuote}>
-              {" "}
+          {status !== 'loading' ? (
+            <button className='btn w-[200px] ' onClick={getRandomQuote}>
+              {' '}
               Get a quote
             </button>
           ) : (
